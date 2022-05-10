@@ -1,0 +1,51 @@
+.edit-product-detail{
+    padding: 20px 0px;
+    
+}
+.edit-count{
+    width: 80px; 
+    height: 30px; 
+    text-align: center;
+    border-radius: 3px;
+    border: 1px solid;
+    margin-right: 15px;
+    margin-top: 10px;
+}
+.btn-danger{
+    width: 160px;
+    font-weight: bold;
+}
+.edit-insurance{
+    width: 50%;
+    margin-left: 560px;
+    margin-top: 10px;
+}
+.edit-insurance a{
+    text-decoration: none;
+    color:#dc3545;
+    font-weight: bold;
+}
+hr{
+    color:#dc3545;
+}
+.title{
+    background-color: #EDF1FF;
+    text-align: center;
+    height: 150px;
+    font-size: 16px;
+}
+.title a{
+    color: #dc3545;
+    text-decoration: none;
+}
+.edit-title{
+    height: 100px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: rgb(28, 28, 28);
+    font-size: 30px;
+    margin-bottom: -20px;
+}
+
+

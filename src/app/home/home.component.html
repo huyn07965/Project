@@ -1,0 +1,154 @@
+<!--Start Carousel -->
+<div class="container-fluid edit-carousel">
+  <div id="demo" class="carousel slide " data-bs-ride="carousel">
+
+    <!-- Indicators/dots -->
+    <div class="carousel-indicators">
+      <button type="button" data-bs-target="#demo" data-bs-slide-to="0" class="active"></button>
+      <button type="button" data-bs-target="#demo" data-bs-slide-to="1"></button>
+      <button type="button" data-bs-target="#demo" data-bs-slide-to="2"></button>
+    </div>
+    
+    <!-- Start The slideshow/carousel -->
+    <div class="carousel-inner editcarousel">
+      <div class="carousel-item active">
+        <img src="../assets/banner1.png" alt="Los Angeles" class="d-block" style="width:100%">
+      </div>
+      <div class="carousel-item">
+        <img src="../assets/banner2.jpg" alt="Chicago" class="d-block" style="width:100%">
+      </div>
+      <div class="carousel-item">
+        <img src="../assets/banner3.jpg" alt="New York" class="d-block" style="width:100%">
+      </div>
+    </div>
+    
+    <!-- Left and right controls/icons -->
+    <button class="carousel-control-prev" type="button" data-bs-target="#demo" data-bs-slide="prev">
+      <span class="carousel-control-prev-icon"></span>
+    </button>
+    <button class="carousel-control-next" type="button" data-bs-target="#demo" data-bs-slide="next">
+      <span class="carousel-control-next-icon"></span>
+    </button>
+  </div>
+</div>
+<!-- End Carousel -->
+
+<!-- Start Marketing/service -->
+<div class="container edit-makerting">
+  <hr>
+  <div class="row">
+    <div class="col-md-3 edit-makerting-1">
+      <mat-icon class="edit-makerting-icon">check</mat-icon>&nbsp;&nbsp;
+      <b>Sản phẩm hàng hiệu</b>
+    </div>
+    <div class="col-md-3 edit-makerting-1">
+      <mat-icon class="edit-makerting-icon">flight_takeoff</mat-icon>&nbsp;&nbsp;
+      <b>Giao hàng nhanh chóng</b>
+    </div>
+    <div class="col-md-3 edit-makerting-1">
+      <mat-icon class="edit-makerting-icon">cached</mat-icon>&nbsp;&nbsp;
+      <b>Hoàn trả dễ dàng</b>
+    </div>
+    <div class="col-md-3 edit-makerting-1">
+      <mat-icon class="edit-makerting-icon">phone</mat-icon>&nbsp;&nbsp;
+      <b>Tư vấn 24/7</b>
+    </div>
+  </div>
+  <hr>
+</div>
+<!-- End Makerting -->
+
+<!-- Start Content -->
+<div class="container">
+    <div class="row">
+        <div class="col-md-4">
+          <img src="/assets/prwatch2.jpg" width="400px" height="570px" alt=""/>
+        </div>
+        <div class="col-md-8">
+            <h2 class="edit-font">- Đồng hồ thông minh -</h2>
+            <owl-carousel-o  [options]="Home">
+                <ng-template *ngFor="let showproduct of products" carouselSlide> 
+                    <div class="card editcard">
+                        <div class="card-body">
+                          <a routerLink="/detail/{{showproduct.id}}">
+                            <img class="effect" src = "{{showproduct.image}}" height="300px"/>
+                            <h4 style="text-align: center; color:black; font-size: 16px; font-weight: bold">{{ showproduct.name }}</h4>
+                            <h4 style="text-align: center; color: #dc3545; font-size: 16px; font-weight: bold">{{showproduct.price}} VNĐ</h4>
+                          </a>
+                          <button type="button" class="btn btn-danger" data-bs-toggle="modal" data-bs-target="#myModal"><mat-icon>favorite</mat-icon></button>
+                          <button type="button" class="btn btn-dark" data-bs-toggle="modal" data-bs-target="#myModal"><mat-icon>add_shopping_cart</mat-icon></button>
+                        </div>
+                    </div>  
+                </ng-template>
+            </owl-carousel-o>
+        </div>
+    </div>
+</div>
+
+<!-- Start Title -->
+<div class="title">
+  <p> Những thứ chúng tôi có - Là những gì bạn cần</p>
+  <a href="Home">- Sản Phẩm -</a>
+</div>
+<!-- End Title -->
+
+<div class="container">
+    <div class="row">
+        <div class="col-md-8">
+            <h2 class="edit-font">- Đồng hồ cơ -</h2>
+            <owl-carousel-o  [options]="Home">
+                <ng-template *ngFor="let showproduct of productss" carouselSlide>
+                 <ng-template [ngIf]="showproduct.type == 2">
+                  <div class="card editcard-1">
+                    <div class="card-body">
+                      <a routerLink="/detail/{{showproduct.id}}">
+                        <img class="effect" src = "{{showproduct.image}}" height="300px"/>
+                        <h4 style="text-align: center; color:black; font-size: 16px; font-weight: bold">{{ showproduct.name }}</h4>
+                        <h4 style="text-align: center; color: #dc3545; font-size: 16px; font-weight: bold">{{showproduct.price}} VNĐ</h4>
+                      </a>
+                      <button type="button" class="btn btn-danger" data-bs-toggle="modal" data-bs-target="#myModal"><mat-icon>favorite</mat-icon></button>
+                      <button type="button" class="btn btn-dark" data-bs-toggle="modal" data-bs-target="#myModal"><mat-icon>add_shopping_cart</mat-icon></button>
+                    </div>
+                </div>
+                 </ng-template>  
+                </ng-template>
+            </owl-carousel-o>
+        </div>
+        <div class="col-md-4">
+          <img src="/assets/prwatch1.jpg" width="400px" height="570px" alt=""/>
+        </div>
+    </div>
+</div>
+
+<!-- End Content -->
+
+<!-- Start contact -->
+<div class="container contact">
+  <div class="row">
+    <div class="col-md-12">
+      <div class="section-heading">
+        <h1>Về chúng tôi?</h1><hr>
+      </div>
+    </div>
+    <div class="col-md-6 edit-contact">
+      <div>
+        <h4>Thông tin chung</h4>
+        <p>WATCHSHOP là một công ty được thành lập từ năm 2020 bởi hai vị giám đốc hiện tại là Nguyễn Gia Huy và Lý Trần Huy Quang. Công ty đã phát triển rất nhanh dù đang trong thời dich bệnh hoành hành nhờ tuân thủ nghiêm túc những tiêu chí sau </p>
+        <ul>
+          <li>Cam kết hàng chính hãng 100%</li>
+          <li>Giao hàng nhanh chóng</li>
+          <li>Hỗ trợ tận tình</li>
+          <li>Giá cả cạnh tranh</li>
+          <li>Đổi trả dễ dàng</li>
+        </ul>
+        <a href="about.html" class="btn btn-danger"><b>Nhiều hơn</b></a>
+      </div>
+    </div>
+    <div class="col-md-6">
+      <div class="right-image">
+        <img src="assets/contact.jpg" width="571px" height="346px" alt="contact">
+      </div>
+    </div>
+  </div>
+</div>
+<!-- End contact -->

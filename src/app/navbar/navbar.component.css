@@ -1,0 +1,226 @@
+.edit-logo{
+    display: flex;
+    justify-content:center;
+    align-items: center;
+    font-weight: bold;
+    padding-top: 10px;
+    padding-left: 50px;;
+}
+.edit-label{
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+a{
+    text-decoration: none;
+}
+label {
+    display: block;
+    font-weight: bold;
+    font-size: 1.1rem;
+    margin-top: 0.5rem;
+    margin-bottom: .5rem;
+  }
+input {
+    padding: .3rem;
+    width: 368px;
+    max-width: 600px;
+    box-sizing: border-box;
+    display: block;
+    margin-top: 1rem;
+    border: 2px solid #dc3545;
+    border-radius: 3px;
+}
+
+input:focus {
+    outline: #dc3545 auto 1px;
+}
+  
+li {
+    list-style-type: none;
+}
+.search-result li a {
+    border-bottom: 1px solid gray;
+    border-left: 1px solid gray;
+    border-right: 1px solid gray;
+    display: inline-block;
+    width: 100%;
+    max-width: 600px;
+    padding: .5rem;
+    box-sizing: border-box;
+    text-decoration: none;
+    color: black;   
+}
+  
+.search-result li a:hover {
+    background-color: #dc3545;
+    color: white;
+    width: 368px;
+}
+
+ul.search-result {
+    margin-top: 0;
+    padding-left: 0;
+    width: 368px;
+    position: absolute;
+    z-index: 2;
+    background-color: white;
+}
+.edit-navbar{
+    background-color: #252525;
+    text-align: center;
+    color: white;
+    font-weight: bold;
+    font-size: 15px;
+}
+.edit-navbar a{
+    color: white;
+}
+.edit-navbar-detail{
+    height:55px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.edit-navbar-detail:hover {
+    background-color: #dc3545;
+}
+a{
+    text-decoration: none;
+    color: black;
+}
+.dropbtn-cart {
+    background-color: white;
+    color: black;
+    font-weight: bold;
+    padding-top: 20px;
+    display: flex;
+    align-items: center;
+    font-size: 17px;
+}
+.dropdown-cart {
+    position: relative;
+    display: inline-block;
+}
+.dropdown-content-cart {
+    display: none;
+    position: absolute;
+    background-color: white;
+    min-width: 300px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 2;
+    border: 2px solid ;
+    border-radius: 4px;
+}
+.dropdown-content-cart a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+}
+.dropdown-content-cart a:hover {
+    background-color: #dc3545;
+    color: white;
+}
+.dropdown-cart:hover .dropdown-content-cart {
+    display: block;
+    width: 222px;
+}
+.edit-cart-slideshow{
+    border: 1px solid;
+    border-radius: 3px;
+    margin-top: 10px;
+    display: flex;
+    align-items: center;
+}
+.edit-cart-slideshow-1{
+    text-align:  center;
+    padding: 20px 10px;
+}
+.edit-cart-slideshow-1{
+    text-align: start;
+   
+}
+.edit-cart-slideshow-1 a{
+    width: 100%;
+    height: 40px;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.dropbtn {
+    background-color: #252525;
+    color: white;
+    font-weight: bold;
+    border: none;
+    cursor: pointer;
+    width: 222px;
+    height: 55px;
+}
+  
+.dropdown {
+    position: relative;
+    display: inline-block;
+}
+.dropdown-content {
+    display: none;
+    color:white;
+    position: absolute;
+    background-color: #252525;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 2;
+}
+.dropdown-content a {
+    color: white;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+}
+.dropdown-content a:hover {
+    background-color: #dc3545;
+    color: white;
+}
+  
+.dropdown:hover .dropdown-content {
+    display: block;
+    width: 222px;
+}
+.dropdown:hover .dropbtn {
+    background-color: #dc3545;
+    
+}
+.edit-header-1{
+    display: flex;
+    align-items: center;
+    height: 3rem;
+    justify-content: flex-end;
+    border: 0.5px solid;
+    border-color: gray;
+    
+}
+.edit-header-2{
+    display: flex;
+    align-items: center;
+    border-top: 0.5px solid;
+    border-bottom: 0.5px solid;
+    border-color: gray;
+}
+.edit-header-3{
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    border-top: 0.5px solid;
+    border-bottom: 0.5px solid;
+    border-color: gray;
+}
+.edit-header-4{
+    display: flex;
+    align-items: center;
+    border: 0.5px solid;
+    border-color: gray;
+    color: black;
+    font-weight: bold;
+}
+  

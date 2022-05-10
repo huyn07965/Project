@@ -1,0 +1,116 @@
+<!-- Start Header 1 -->
+<div class="container-fluid">
+  <div class="row">
+    <div class="col-md-3 edit-header-1">
+      <mat-icon>mail</mat-icon>&nbsp;&nbsp;
+      <b>wtshopvn@gmail.com</b>
+    </div>
+    <div class="col-md-4 edit-header-2">
+      <mat-icon>phone</mat-icon>&nbsp;&nbsp;
+      <b>1900036489</b>
+    </div>
+    <div class="col-md-2 edit-header-3">
+      <a href="https://www.facebook.com/DaiHocNguyenTatThanh"><mat-icon>facebook</mat-icon></a>&nbsp;&nbsp;
+      <a href="https://www.youtube.com/c/daihocntt/videos"><mat-icon>live_tv</mat-icon></a>&nbsp;&nbsp;
+    </div>
+    <div class="col-md-3 edit-header-4">
+      <mat-icon>person</mat-icon>&nbsp;&nbsp;
+      <a href="#" data-bs-toggle="modal" data-bs-target="#myModal">Đăng nhập</a>
+    </div>
+  </div>
+</div>
+<!-- End Header 1 -->
+
+<!-- Start Header 2 -->
+<div class="container-fluid">
+  <div id="search-component">
+    <div class="row">
+      <div class="col-md-3 edit-logo">
+        <h1><a href="Home"><b style="color: #dc3545">WATCH</b><b style="color: #343a40">SHOP</b></a></h1>
+      </div>
+      <div class="col-md-2 edit-label">
+        <label class="btn " for="search-box">Tìm kiếm :</label>
+      </div>
+      <div class="col-md-4" style="margin-top: -5px">
+        <input #searchBox id="search-box"  (input)="search(searchBox.value)" />
+        <ul class="search-result">
+          <li *ngFor="let hero of products$ | async" >
+            <a routerLink="/detail/{{hero.id}}">
+              {{hero.name}}
+            </a>
+          </li>
+        </ul>
+      </div>
+      <div class="col-md-2">
+        <div class="dropdown-cart">
+          <a class="dropbtn-cart" href="Cart"><mat-icon>shopping_cart</mat-icon>&nbsp;1.200.000 đ</a>
+          <div class="dropdown-content-cart">
+            <div class="container">
+              <div class="row edit-cart-slideshow">
+                <div class="col-md-4">
+                  <img src="assets/apple/apple-watch-s3-gps-42mm-vien-nhom-day-cao-su-den-12-org.jpg" width="70px" height="70px" alt="product"/>
+                </div>
+                <div class="col-md-7">
+                  <h3><b>Apple Watch S3 GPS</b></h3>
+                  <h4><b style="color: #dc3545;">5.590.000 đ</b>&nbsp;&nbsp;&nbsp; <b>SL</b> : 1</h4>
+                </div>
+            </div>
+            </div>
+            <div class="container">
+              <div class="row edit-cart-slideshow">
+                <div class="col-md-4">
+                  <img src="assets/huawei/gt3.jpg" width="70px" height="70px" alt="product"/>
+                </div>
+                <div class="col-md-7">
+                  <h3><b>Huawei GT 3</b></h3>
+                  <h4><b style="color: #dc3545;">5.490.000 đ</b>&nbsp;&nbsp;&nbsp; <b>SL</b> : 1</h4>
+                </div>
+            </div>
+            </div>
+            <div class="container edit-cart-slideshow-1">
+              <h3><b>Tổng tiền :</b>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <b style="color: #dc3545;">11.080.000 đ</b></h3>
+              <a href="Cart" class="btn btn-danger">Xem giỏ hàng</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+<!-- End Header 2 -->
+
+<!-- Start -->
+<div class="container-fluid" style="background-color: #252525;">
+  <div class="container edit-navbar">
+    <div class="row">
+      <div class="col-md-1"></div>
+      <div class="col-md-2 edit-navbar-detail">
+        <a href="Home">Trang chủ</a>
+      </div>
+      <div class="col-md-2 edit-navbar-detail">
+        <div class="dropdown">
+          <button class="dropbtn">Danh mục</button>
+          <div class="dropdown-content">
+          <a href="Product" style="height: 55px;">Đồng hồ thông minh</a>
+          <a href="Product Mechanical" style="height: 55px;">Đồng hồ cơ</a>
+          </div>
+        </div>
+      </div>
+      
+      <div class="col-md-2 edit-navbar-detail">
+        <a>Giới thiệu</a>
+      </div>
+      <div class="col-md-2 edit-navbar-detail">
+        <a href="Contact">Liên hệ</a>
+      </div>
+      <div class="col-md-2 edit-navbar-detail">
+        <a>Tin tức</a>
+      </div>
+      <div class="col-md-1"></div>
+    </div>
+  </div>
+</div>
+<!-- End Navbar  -->
+
+
+    

@@ -1,0 +1,120 @@
+.edit-makerting{
+    padding-top: 10px;
+    padding-bottom:10px;
+    text-align: center;
+}
+.edit-makerting hr{
+    color: #dc3545;
+}
+.edit-makerting b{
+    font-size: 18px;
+}
+.edit-makerting-1{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100px;
+}
+.edit-makerting-icon{
+    font-size: 55px;
+    font-weight: 550;
+    padding-right: 55px;
+    margin-top: -27px;
+    color: #dc3545;
+}
+.effect{
+    transition-duration: .3s;
+transition-property: transform;
+transition-timing-function: ease-out;
+}
+.effect:hover{
+    transform: translateY(-20px);
+}
+.editcard{
+    max-width: 290px;
+    border: none;
+}
+.editcard-1{
+    max-width: 290px;
+    border: none;
+    margin-left: -15px;
+}
+.editcarousel{
+    height: 800px;
+}
+.edit-carousel{
+    padding: 0px;
+    margin-bottom: 10px;
+}
+.edit-font{
+    font-size: 25px;
+    font-weight: 550;
+    text-align: center;
+    color: #dc3545;
+}
+.btn-danger{
+    min-width:65px;
+    margin-right: 5px;
+    border-radius: 3px ;
+    max-height: 40px;
+}
+.btn-dark{
+    width:180px;
+    border-radius: 3px ;
+    max-height: 40px;
+}
+a{
+    text-decoration: none;
+}
+.container{
+    margin-bottom: 10px
+}
+img{
+    border-radius: 2px;
+}
+.contact{
+    padding-top: 50px;
+    padding-bottom: 30px;
+}
+.section-heading{
+    padding-bottom: 50px;
+}
+.section-heading h1{
+    font-weight: 550;
+}
+.edit-contact{
+    font-size: 16px;
+    line-height: 40px;
+}
+.edit-contact h4{
+    color: #dc3545;
+    font-size:20px;
+    font-weight: 550;
+}
+.edit-contact li{
+    margin-left: -15px;
+}
+.right-image{
+    display: flex;
+    justify-content: flex-end;
+}
+.title{
+    background-color: #EDF1FF;
+    height: 200px;
+    text-align: center;
+    font-weight: 550;
+    color: rgb(28, 28, 28);
+    font-size: 25px;
+    margin: 20px 0px;
+}
+.title a{
+    color: #dc3545;
+    text-decoration: none;
+    font-size: 16px;
+}
+.title p{
+    padding-top: 75px;
+}
+
+  
+  

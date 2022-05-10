@@ -1,0 +1,110 @@
+<!-- Start Title  -->
+<div class="title">
+  <div class="edit-title">
+    <b> Đồng Hồ Cơ</b>
+  </div>
+  <p><a href="Home">Trang chủ </a>- Sản Phẩm</p>
+</div>
+<!-- End Title -->
+
+<!-- Start Content/Product -->
+<mat-tab-group mat-align-tabs="center">
+  <mat-tab label="All">
+    <div class="container" >
+      <div class="col-md-3 edit-product" *ngFor="let showproduct of products">
+          <ng-template [ngIf]="showproduct.type == 2 ">
+            <div class="card editcard">
+                <div class="card-body">
+                  <a routerLink="/detail/{{showproduct.id}}">
+                    <img class="effect" src = "{{showproduct.image}}" height="300px" width="241px"/>
+                    <h4 style="color:black; font-size: 15px; font-weight: bold">{{ showproduct.name }}</h4>
+                    <h4 style="color: red; font-size: 15px; font-weight: bold">{{showproduct.price}} VNĐ</h4>
+                  </a>
+                  <button type="button" class="btn btn-danger" data-bs-toggle="modal" data-bs-target="#myModal"><mat-icon>favorite</mat-icon></button>
+              <button type="button" class="btn btn-dark" data-bs-toggle="modal" data-bs-target="#myModal"><mat-icon>add_shopping_cart</mat-icon></button>
+                </div>
+              </div>
+          </ng-template>
+        </div>
+    </div>
+  </mat-tab>
+  <mat-tab label="Orient">
+    <div class="container">
+      <div class="col-md-3 edit-product" *ngFor="let showproduct of products">
+        <div *ngIf="showproduct.company == 'Orient'"> 
+          <div class="card editcard">
+            <div class="card-body">
+              <a routerLink="/detail/{{showproduct.id}}">
+                <img class="effect" src = "{{showproduct.image}}" height="300px" width="241px"/>
+                <h4 style="color:black; font-size: 15px; font-weight: bold">{{ showproduct.name }}</h4>
+                <h4 style="color: red; font-size: 15px; font-weight: bold">{{showproduct.price}} VNĐ</h4>
+              </a>
+              <button type="button" class="btn btn-danger" data-bs-toggle="modal" data-bs-target="#myModal"><mat-icon>favorite</mat-icon></button>
+              <button type="button" class="btn btn-dark" data-bs-toggle="modal" data-bs-target="#myModal"><mat-icon>add_shopping_cart</mat-icon></button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </mat-tab>
+  <mat-tab label="Seiko">
+    <div class="container" >
+      <div class="col-md-3 edit-product" *ngFor="let showproduct of products">
+        <div *ngIf="showproduct.company == 'Seiko'" >
+        <div class="card editcard">
+          <div class="card-body">
+            <a routerLink="/detail/{{showproduct.id}}">
+              <img class="effect" src = "{{showproduct.image}}" height="300px" width="241px"/>
+              <h4 style="color:black; font-size: 15px; font-weight: bold">{{ showproduct.name }}</h4>
+              <h4 style="color: red; font-size: 15px; font-weight: bold">{{showproduct.price}} VNĐ</h4>
+            </a>
+            <button type="button" class="btn btn-danger" data-bs-toggle="modal" data-bs-target="#myModal"><mat-icon>favorite</mat-icon></button>
+              <button type="button" class="btn btn-dark" data-bs-toggle="modal" data-bs-target="#myModal"><mat-icon>add_shopping_cart</mat-icon></button>
+          </div>
+        </div>
+      </div>
+      </div>
+    </div>
+  </mat-tab>
+  <mat-tab label="Candino">
+    <div class="container" >
+      <div class="col-md-3 edit-product" *ngFor="let showproduct of products">
+        <ng-template [ngIf]="showproduct.company == 'Candino'" >
+          <div class="card editcard">
+            <div class="card-body">
+              <a routerLink="/detail/{{showproduct.id}}">
+                <img class="effect" src = "{{showproduct.image}}" height="300px" width="241px"/>
+                <h4 style="color:black; font-size: 15px; font-weight: bold">{{ showproduct.name }}</h4>
+                <h4 style="color: red; font-size: 15px; font-weight: bold">{{showproduct.price}} VNĐ</h4>
+              </a>
+              <button type="button" class="btn btn-danger" data-bs-toggle="modal" data-bs-target="#myModal"><mat-icon>favorite</mat-icon></button>
+              <button type="button" class="btn btn-dark" data-bs-toggle="modal" data-bs-target="#myModal"><mat-icon>add_shopping_cart</mat-icon></button>
+            </div>
+          </div>
+        </ng-template>
+      </div>
+    </div>
+  </mat-tab>
+  <mat-tab label="Citizen">
+    <div class="container" >
+      <div class="col-md-3 edit-product" *ngFor="let showproduct of products">
+        <div *ngIf="showproduct.company == 'Citizen'" >
+          <div class="card editcard">
+            <div class="card-body">
+              <a routerLink="/detail/{{showproduct.id}}">
+                <img class="effect" src = "{{showproduct.image}}" height="300px" width="241px"/>
+                <h4 style="color:black; font-size: 15px; font-weight: bold">{{ showproduct.name }}</h4>
+                <h4 style="color: red; font-size: 15px; font-weight: bold">{{showproduct.price}} VNĐ</h4>
+              </a>
+              <button type="button" class="btn btn-danger" data-bs-toggle="modal" data-bs-target="#myModal"><mat-icon>favorite</mat-icon></button>
+              <button type="button" class="btn btn-dark" data-bs-toggle="modal" data-bs-target="#myModal"><mat-icon>add_shopping_cart</mat-icon></button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </mat-tab>
+</mat-tab-group>
+<!-- End Content/Product -->
+
+
